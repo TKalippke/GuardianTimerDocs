@@ -1,0 +1,5 @@
+title: GuardianTimer Docs
+theme: jekyll-theme-minimal
+description: Offizielle Dokumentation für die GuardianTimer iOS App.
+plugins:
+  - jekyll-seo-tag
