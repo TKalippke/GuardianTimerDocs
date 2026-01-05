@@ -38,27 +38,3 @@ Apple bietet mit den Funktionen "Wo ist?" (Find My) und "Wegbegleitung" (Check I
 * **Apple "Wo ist?":** Zeigt jederzeit den Standort des *Gerätes* an. Es sagt aber nichts darüber aus, wie es der Person geht. Ein Handy kann sich an einem Ort befinden, während dem Besitzer etwas zugestoßen ist, ohne dass es jemand bemerkt.
 * **Apple "Wegbegleitung":** Überwacht, ob eine Person ein bestimmtes Ziel erreicht. Wenn man sich nicht bewegt oder das Ziel nicht erreicht, wird ein Alarm ausgelöst.
 * **GuardianTimer (Der Unterschied):** Erfordert eine **aktive Bestätigung**. Auch wenn man zu Hause auf dem Sofa sitzt (und sich der Standort nicht ändert), muss man regelmäßig bestätigen, dass man wohlauf ist. Tut man das nicht (z. B. wegen Ohnmacht oder Sturz), wird Alarm geschlagen. Es geht um die **Aktivität der Person**, nicht nur um den Ort des Gerätes.
-
-## Herausforderungen in der Entwicklung
-
-Die Entwicklung einer solchen Sicherheits-App bringt spezielle technische Hürden mit sich:
-
-### 1. Zuverlässigkeit vs. Akkuverbrauch
-Die App muss im Hintergrund laufen, um im Notfall zuverlässig zu alarmieren. Gleichzeitig darf sie den Akku nicht leer saugen.
-
-**Lösung:** Die App nutzt eine "When-In-Use"-Strategie. Der Standort wird nur genau in dem Moment abgefragt, wenn der Sender den Knopf drückt. Das spart Energie und schützt die Privatsphäre.
-
-### 2. Datenübertragung in Echtzeit (CloudKit)
-Wenn der Sender den Knopf drückt, muss diese Information sofort auf dem Handy des Empfängers erscheinen.
-
-**Lösung:** Wir nutzen Apples iCloud (CloudKit) zur Übertragung. Diese ist sicher und datenschutzfreundlich. Spezielle Mechanismen („Polling" und „Remote Change Observer“) sorgen dafür, dass der Alarm beim Empfänger auch wirklich ankommt.
-
-### 3. Fehlalarme vermeiden
-Nichts ist schlimmer als ein Fehlalarm, der Panik auslöst.
-
-**Lösung:** Mechanismen („Deduping" und „Cooldowns“) verhindern, dass ein Alarm mehrmals ausgelöst wird.
-
-### 4. Datenschutz und Berechtigungen
-Die App benötigt Zugriff auf den Standort und muss Mitteilungen senden dürfen.
-
-**Ansatz:** Wir fragen nur nach den nötigsten Rechten. Der Standort wird nicht permanent überwacht, sondern nur punktuell beim manuellen Check-in gesendet.
