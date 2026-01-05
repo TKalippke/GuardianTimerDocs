@@ -7,7 +7,7 @@ title: GuardianTimer Dokumentation
 
 Die **GuardianTimer** ist eine Sicherheits-App für iOS, die nach dem Prinzip eines **Totmannschalters** funktioniert. Sie dient dazu, automatisch Hilfe zu rufen oder einen Alarm auszulösen, wenn der Nutzer *nicht* mehr reagiert.
 
-![App-Rechte und Systemfunktionen](/assets/images/GuardianTimer-0-AppRights.png)
+![App-Rechte und Systemfunktionen](/assets/images/GuardianTimer-0-AppRights.png){width=220px}
 
 ## Was ist der GuardianTimer?
 
@@ -17,17 +17,17 @@ Der GuardianTimer überwacht, ob der Nutzer regelmäßig aktiv bestätigt, dass 
 
 1. **Der Sender (z. B. eine gefährdete Person):** Startet die App und aktiviert einen Timer (z. B. 30 Minuten). Solange alles in Ordnung ist, muss der Sender regelmäßig einen Knopf drücken („Ich bin OK“). Bei jedem Drücken wird der Timer zurückgesetzt, und der aktuelle Standort sowie der Zeitpunkt werden aktualisiert.
 
-![Start-Button des Senders](/assets/images/GuardianTimer-2-StartButton.png)
+![Start-Button des Senders](/assets/images/GuardianTimer-2-StartButton.png){width=220px}
 
-![Laufender Timer beim Sender](/assets/images/GuardianTimer-3-RunningTimer.png)
+![Laufender Timer beim Sender](/assets/images/GuardianTimer-3-RunningTimer.png){width=220px}
 
 2. **Der Empfänger (z. B. ein Angehöriger):** Installiert ebenfalls die App und abonniert die Daten des Senders. Er sieht, wann zuletzt das „Alles OK“-Signal kam.
 
 3. **Der Alarm:** Vergisst oder schafft es der Sender nicht, den Knopf vor Ablauf der Zeit zu drücken, wird der Empfänger automatisch alarmiert.
 
-![Timer abgelaufen beim Empfänger](/assets/images/GuardianTimer-4-Watcher-TimerOverdue.png)
+![Timer abgelaufen beim Empfänger](/assets/images/GuardianTimer-4-Watcher-TimerOverdue.png){width=220px}
 
-![Letzter Standort auf der Karte](/assets/images/GuardienTimer-5-Watcher-Map.png)
+![Letzter Standort auf der Karte](/assets/images/GuardienTimer-5-Watcher-Map.png){width=220px}
 
 Die App überwacht also nicht primär, *wo* jemand ist, sondern *ob* jemand noch handlungsfähig ist.
 
