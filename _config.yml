@@ -5,7 +5,7 @@ url: "https://tkalippke.github.io"
 baseurl: "/GuardianTimerDocs"
 description: "Offizielle Dokumentation für die GuardianTimer iOS Sicherheits-App"
 logo: "/assets/images/Logo.png"
-color_scheme: default
+# color_scheme entfernt wegen SCSS Build-Fehler
 search_enabled: true
 search_button: true
 search_heading: "Suche"
