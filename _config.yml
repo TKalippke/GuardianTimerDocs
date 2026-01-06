@@ -1,6 +1,6 @@
-theme: academicpages/academicpages.github.io
+remote_theme: academicpages/academicpages.github.io
 title: GuardianTimer Dokumentation
-url: "https://TKalippke.github.io"
+url: "https://tkalippke.github.io"
 baseurl: "/GuardianTimerDocs"
 description: "Offizielle Dokumentation für die GuardianTimer iOS Sicherheits-App"
 logo: "/assets/images/Logo.png"
