@@ -1,5 +1,53 @@
-title: GuardianTimer Docs
-theme: jekyll-theme-minimal
-description: Offizielle Dokumentation für die GuardianTimer iOS App.
+theme: academicpages/academicpages.github.io
+title: GuardianTimer Dokumentation
+url: "https://TKalippke.github.io"
+baseurl: "/GuardianTimerDocs"
+description: "Offizielle Dokumentation für die GuardianTimer iOS Sicherheits-App"
+logo: "/assets/images/GuardianTimer-0-AppRights.png"
 plugins:
-  - jekyll-seo-tag
+  - jekyll-seers
+  - jemoji
+  - jekyll-redirect-from
+  - jekyll-feed
+  - jekyll-sitemap
+collections:
+  publications:
+    output: true
+  talks:
+    output: true
+  portfolio:
+    output: true
+  posts:
+    permalink: /posts/:year-:month-:day-:title/
+    output: true
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "publications"
+    values:
+      layout: "publication"
+  -
+    scope:
+      path: ""
+      type: "talks"
+    values:
+      layout: "talk"
+  -
+    scope:
+      path: ""
+      type: "portfolio"
+    values:
+      layout: "publication"
+exclude:
+  - Gemfile
+  - Gemfile.lock
+header_pages:
+  - index.md
+  - datenschutz.md
