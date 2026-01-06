@@ -3,7 +3,7 @@ title: GuardianTimer Dokumentation
 url: "https://TKalippke.github.io"
 baseurl: "/GuardianTimerDocs"
 description: "Offizielle Dokumentation für die GuardianTimer iOS Sicherheits-App"
-logo: "/assets/images/GuardianTimer-0-AppRights.png"
+logo: "/assets/images/Logo.png"
 plugins:
   - jekyll-seers
   - jemoji
