@@ -1,53 +1,14 @@
-remote_theme: academicpages/academicpages.github.io
+theme: jekyll-theme-minimal
+remote_theme: just-the-docs/just-the-docs
 title: GuardianTimer Dokumentation
 url: "https://tkalippke.github.io"
 baseurl: "/GuardianTimerDocs"
 description: "Offizielle Dokumentation für die GuardianTimer iOS Sicherheits-App"
 logo: "/assets/images/Logo.png"
-plugins:
-  - jekyll-seers
-  - jemoji
-  - jekyll-redirect-from
-  - jekyll-feed
-  - jekyll-sitemap
-collections:
-  publications:
-    output: true
-  talks:
-    output: true
-  portfolio:
-    output: true
-  posts:
-    permalink: /posts/:year-:month-:day-:title/
-    output: true
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  -
-    scope:
-      path: ""
-      type: "publications"
-    values:
-      layout: "publication"
-  -
-    scope:
-      path: ""
-      type: "talks"
-    values:
-      layout: "talk"
-  -
-    scope:
-      path: ""
-      type: "portfolio"
-    values:
-      layout: "publication"
-exclude:
-  - Gemfile
-  - Gemfile.lock
-header_pages:
-  - index.md
-  - datenschutz.md
+color_scheme: default
+search_enabled: true
+search_button: true
+search_heading: "Suche"
+heading_anchors: true
+back_to_top: true
+last_edit: "2026-01-06"

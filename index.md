@@ -1,6 +1,8 @@
 ---
 layout: default
-title: GuardianTimer Dokumentation
+nav_order: 1
+parent: Einführung
+title: GuardianTimer – Funktionsweise und Hintergründe
 ---
 
 # GuardianTimer – Funktionsweise und Hintergründe

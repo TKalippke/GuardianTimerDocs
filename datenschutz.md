@@ -1,5 +1,7 @@
 ---
 layout: default
+nav_order: 2
+parent: Einführung
 title: Datenschutz
 permalink: /datenschutz/
 ---
